@@ -48,7 +48,7 @@ searchBtn.addEventListener("click", () => {
     fetchLiveData(query);
 });
 
-// Helper: build the correct URL
+// Helper: build URL
 function buildUrl(query) {
     const trimmed = query.trim();
     const apiKey = "50257df1e272468eb04162808250112";

@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <body>
+    <main class="wrap">
+        <h1>Weather App</h1>
+
+        <section class="card" aria-label="Search form">
+            <label>
+                Enter city or location
+                <input
+                    id="query"
+                    type="text"
+                    placeholder="Location"
+                    required
+                />
+            </label>
+
+            <button id="searchBtn" type="button"> 
+                Search
+            </button>
+        </section>
+
+        <p id="status" aria-live="polite"></p>
+
+        <section class="card card-results card-disabled" aria-label="Results">
+            <div id="results" class="results-grid">
+            <!-- JavaScript will create result cards here -->
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+
+  </body>
+</html>

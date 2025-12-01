@@ -1,0 +1,79 @@
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  margin: 0; /* Remove default browser margins */
+  background-color: #f4f7fb; /* Background behind cards */
+}
+
+/* Center content and limit width for readability */
+.wrap {
+  max-width: 960px; /* Do not let lines become too wide */
+  margin: 20px auto; /* Center container horizontally and add top/bottom space */
+  padding: 0 16px; /* Side padding for small screens */
+}
+
+/* Styling for search and results sections */
+.card {
+  background-color: #ffffff; /* Background card */
+  border: 1px solid #e2e7fb; /* Border */
+  border-radius: 12px; /* Rounded corners */
+  padding: 16px; /* Inner padding */
+  margin: 12px 0; /* Vertical gap between cards */
+}
+
+.card-disabled {
+  display: none;
+}
+
+/* Stack labels and inputs */
+label {
+  display: block; /* Make each label occupy full width (block) */
+  margin: 8px 0; /* Vertical spacing between labels */
+}
+
+/* Shared styles for inputs, selects and buttons */
+input,
+select,
+button {
+  font: inherit; /* Use same font as body */
+  padding: 8px; /* Inner padding for click or touch comfort */
+  border-radius: 8px; /* Slightly rounded corners */
+  border: 1px solid #ccd3e0; /* Soft border colour */
+}
+
+/* Button style */
+button {
+  background-color: #019dd5; 
+  color: #ffffff; /* Text */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+button:hover {
+  background-color: #00a8d6; /* Color on hover for feedback */
+}
+
+/* Grid for result cards */
+.results-grid {
+  display: grid; /* Use CSS Grid layout */
+  gap: 12px; /* Space between grid items */
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Auto-fit responsive columns */
+}
+
+/* Individual result card */
+.result-card {
+  border: 1px solid #e2e7fb; /* Thin border matching the main card style */
+  border-radius: 10px; /* Rounded corners for card */
+  padding: 10px 12px; /* Inner padding for content */
+  background-color: #f7faff; 
+}
+
+/* Title inside card */
+.result-card h3 {
+  margin-top: 0; /* Remove default margin above */
+  margin-bottom: 6px; /* Small gap below the heading */
+  font-size: 1.05em;
+}
+
+/* Extra information text */
+.result-card .muted {
+  color: #4b5563;
+  font-size: 0.95em;
+}

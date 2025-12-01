@@ -53,7 +53,7 @@ function buildUrl(query) {
     const trimmed = query.trim();
     const apiKey = "50257df1e272468eb04162808250112";
 
-    return "http://api.weatherapi.com/v1/current.json?q="
+    return "https://api.weatherapi.com/v1/current.json?q="
             + encodeURIComponent(trimmed)
             + "&key="
             + apiKey;
@@ -78,7 +78,7 @@ async function fetchLiveData(query) {
             "The server responded with an error (" + response.status + "). Please try again.";
 
             disableResultSection();
-            
+
             return;
         }
 
